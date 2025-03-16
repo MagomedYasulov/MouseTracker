@@ -17,4 +17,10 @@
     <ProjectReference Include="..\MouseTracker.Infrastructure\MouseTracker.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\css\index.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

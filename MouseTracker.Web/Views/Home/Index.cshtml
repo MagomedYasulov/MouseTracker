@@ -1,0 +1,31 @@
+﻿<button id="myButton">Отправить данные</button>
+
+<link rel="stylesheet" href="~/css/index.css">
+<script>
+
+    const apiBaseUrl = '/api/v1/positions'
+    var mousePositions = [];
+    const button = document.getElementById('myButton');
+
+    document.onmousemove = function(e)
+    {
+        mousePositions.push({X: e.clientX, Y: e.clientY, MoveTime: new Date() });
+    }
+   
+    button.addEventListener('click', async () => {
+        const response = await fetch(apiBaseUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(mousePositions)
+        });
+
+        if (response.ok) {
+            alert('Данные отправленны.');
+            mousePositions = [];
+        } else {
+            alert('Ошибка отправки данных.');
+        }        
+    });
+</script>

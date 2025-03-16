@@ -38,8 +38,8 @@ namespace MouseTracker.Infrastructure.Services
             var isStartTimeNull = filter.StartTime == null;
             var isEndTimeNull = filter.EndTime == null;
 
-            Expression<Func<Position, bool>> exp = r => ((isStartTimeNull || r.CreatedAt >= filter.StartTime) &&
-                                                         (isEndTimeNull || r.CreatedAt <= filter.EndTime));
+            Expression<Func<Position, bool>> exp = r => ((isStartTimeNull || r.MoveTime >= filter.StartTime) &&
+                                                         (isEndTimeNull || r.MoveTime <= filter.EndTime));
 
             var positions = await _dbContext.Positions.AsNoTracking().Where(exp).ToArrayAsync();
             return _mapper.Map<PositionDto[]>(positions);

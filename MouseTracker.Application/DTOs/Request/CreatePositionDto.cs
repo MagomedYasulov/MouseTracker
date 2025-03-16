@@ -6,5 +6,6 @@ namespace MouseTracker.Application.DTOs.Request
     {
         public double X { get; set; }
         public double Y { get; set; }
+        public DateTime MoveTime { get; set; }
     }
 }
