@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseTracker.Web", "MouseTracker.Web\MouseTracker.Web.csproj", "{FFFEAEA9-E8D9-4C34-BCAF-89463B6DFDE6}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseTracker.Application", "MouseTracker.Application\MouseTracker.Application.csproj", "{1366610D-104A-4882-91FD-3D2828808C16}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseTracker.Infrastructure", "MouseTracker.Infrastructure\MouseTracker.Infrastructure.csproj", "{5912D840-22C5-4643-9C3A-18C901AB6BAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseTracker.Tests", "MouseTracker.Tests\MouseTracker.Tests.csproj", "{E752979F-3504-4F74-8B20-9138EAD4F90D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5912D840-22C5-4643-9C3A-18C901AB6BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5912D840-22C5-4643-9C3A-18C901AB6BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5912D840-22C5-4643-9C3A-18C901AB6BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E752979F-3504-4F74-8B20-9138EAD4F90D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E752979F-3504-4F74-8B20-9138EAD4F90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E752979F-3504-4F74-8B20-9138EAD4F90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E752979F-3504-4F74-8B20-9138EAD4F90D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
